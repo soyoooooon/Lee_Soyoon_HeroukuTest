@@ -1,5 +1,350 @@
 @import '_vars';
 
+@media only screen and (max-width: 575px){
+
+    main{
+        margin: 0 auto;
+        }
+        
+        .cont{
+        width: 100%;
+        height: 80vh;
+        background-image: url(../images/cutter2.jpg);
+        background-position: center center;
+        background-size: cover;
+        
+        h2{ color:#FBEE4A;
+            font-size: 2.8em;
+            text-align: center;
+            padding-top: 55vh;
+            padding-left: 25%;
+            font-family: $m-font;}
+        }
+        
+        //header
+
+#whatis{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    padding: 3%;
+        img{width: 70%; height: 70%; margin: 0 auto;}
+        h2{font-size: 1.5em;
+          margin-left: 5%;
+          padding-top: 10vh;
+          text-align: center;
+          font-family: $m-font;}
+    }
+    
+    
+    .banner{
+     width:100%;
+     margin-top: 20vh;
+    
+     h2{text-align: center;
+        font-family: $m-font;
+        font-size: 1.5em;
+        }
+    }
+
+    //why Im doing media query?
+
+
+    #reviews{
+        padding-left: 10%;
+
+
+    
+
+        .flex-box{display: flex; 
+            flex-direction: column;
+            width: 100%;
+            // height: 100vh;
+
+  
+    .wrapper{
+    width: 90%;
+    cursor: pointer;
+    position: relative;
+    margin: 5%;
+        img{width: 90%; height: 70vh;}
+        .review-hover{ background: rgba(0, 0, 0, 0.5);
+                       position: absolute;
+                       z-index: 1;
+                       opacity: 0;
+                       width: 90%; height: 70vh;
+                       top: 0%;
+                       transition: all 300ms ease-in-out;
+                        -webkit-transition: all 300ms ease-in-out;
+                        -moz-transition: all 300ms ease-in-out;
+                        -o-transition: all 300ms ease-in-out;
+                        -ms-transition: all 300ms ease-in-out;
+                            .p1{margin-top: 15vh;}
+                            .p2{margin-top: 5vh;}
+                            .p3{margin-top: 5vh;}
+                            .p4{margin-top: 5vh;}
+                            p{font-family:$sans; 
+                                font-size: 0.9em;
+                                 color: white;
+                                 text-align: center;
+                                 line-height: 1;
+                                }}//hover ends 
+                                
+                                .see{display:none;}
+                                .see slideToggle { display: block; }
+
+                                .more-btn{
+                                background-color: $m-color;
+                                margin-top: 2%;
+                                margin-left: 10%;
+                                text-align:center;
+                                font-size: 0.6em;
+                                width: 80px; height: 25px;
+                                font-family: $m-font;}
+
+                                .look{display:none;}
+                                .look slideToggle { display: block; }
+
+                                .look-btn{
+                                background-color: $m-color;
+                                margin-top: 2%;
+                                margin-left: 10%;
+                                text-align:center;
+                                font-size: 0.6em;
+                                width: 80px; height: 25px;
+                                font-family: $m-font;}
+                                
+    }
+
+    .wrapper:hover .review-hover{ opacity: 1;}
+    }// the flex-box sections end -still can't utilize the flexbox well ;(
+}
+
+//hover event ends
+
+.buy{
+    margin-top: 15%;
+    
+        .buy-btn{ width: 200px;
+            height: 40px;
+            background-color:#61BB46;
+            animation-name: backgroundcolorchange;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            text-align: center;
+            font-size: 1em;
+            font-family: $m-font;
+            border-radius: 12px;
+            cursor: pointer;
+            border:hidden;
+            margin-left: 28%;
+    
+            @keyframes backgroundcolorchange{
+    
+            0% {background: #256610;} 
+            50% {background: #D5DD31;}
+            75% {background: #ff9800;}
+            100% {background: $m-color;}} //animation braket ends
+    
+        }
+    
+            &hover{transform: scale(1.05);}
+    } //div ends
+    
+    
+    #footer{
+        margin-top: 20%;
+     width: 100%;
+     
+     background-color: $m-color;
+    
+     p{font-size: 0.7em;
+        text-align: center;
+        padding: 3.5vh;
+        font-family: $sans;}
+    
+    }
+
+
+
+
+
+
+
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 915px) {
+
+    main{
+        margin: 0 auto;
+        }
+        
+        .cont{
+        width: 100%;
+        height: 80vh;
+        background-image: url(../images/cutter2.jpg);
+        background-position: center center;
+        background-size: cover;
+        
+        h2{ color:#FBEE4A;
+            font-size: 3em;
+            text-align: center;
+            padding-top: 50vh;
+            padding-left: 45%;
+            font-family: $m-font;}
+        }
+        
+        //header
+    
+    
+#whatis{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    padding: 3%;
+        img{width: 50%; height: 50%;}
+        h2{font-size: 1.5em;
+          margin-left: 5%;
+          padding-top: 10vh;
+          text-align: center;
+          font-family: $m-font;}
+    }
+    
+    
+    .banner{
+     width:100%;
+     margin-top: 25vh;
+    
+     h2{text-align: center;
+        font-family: $m-font;
+        font-size: 2em;
+        }
+    }
+
+    //why Im doing media query?
+
+
+    #reviews{
+        padding-left: 10%;
+
+
+    
+
+        .flex-box{display: flex; 
+            flex-direction: column;
+            width: 100%;
+            // height: 100vh;
+
+  
+    .wrapper{
+    width: 90%;
+    cursor: pointer;
+    position: relative;
+    margin: 5%;
+        img{width: 90%; height: 70vh;}
+        .review-hover{ background: rgba(0, 0, 0, 0.5);
+                       position: absolute;
+                       z-index: 1;
+                       opacity: 0;
+                       width: 90%; height: 70vh;
+                       top: 0%;
+                       transition: all 300ms ease-in-out;
+                        -webkit-transition: all 300ms ease-in-out;
+                        -moz-transition: all 300ms ease-in-out;
+                        -o-transition: all 300ms ease-in-out;
+                        -ms-transition: all 300ms ease-in-out;
+                            .p1{margin-top: 15vh;}
+                            .p2{margin-top: 5vh;}
+                            .p3{margin-top: 5vh;}
+                            .p4{margin-top: 5vh;}
+                            p{font-family:$sans; 
+                                font-size: 1em;
+                                 color: white;
+                                 text-align: center;
+                                 line-height: 1.2;
+                                }}//hover ends 
+                                
+                                .see{display:none;}
+                                .see slideToggle { display: block; }
+
+                                .more-btn{
+                                background-color: $m-color;
+                                margin-top: 2%;
+                                margin-left: 10%;
+                                text-align:center;
+                                font-size: 0.6em;
+                                width: 80px; height: 25px;
+                                font-family: $m-font;}
+
+                                .look{display:none;}
+                                .look slideToggle { display: block; }
+
+                                .look-btn{
+                                background-color: $m-color;
+                                margin-top: 2%;
+                                margin-left: 10%;
+                                text-align:center;
+                                font-size: 0.6em;
+                                width: 80px; height: 25px;
+                                font-family: $m-font;}
+                                
+    }
+
+    .wrapper:hover .review-hover{ opacity: 1;}
+    }// the flex-box sections end -still can't utilize the flexbox well ;(
+}
+
+//hover event ends
+
+.buy{
+    margin-top: 15%;
+    
+        .buy-btn{ width: 300px;
+            height: 50px;
+            background-color:#61BB46;
+            animation-name: backgroundcolorchange;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            text-align: center;
+            font-size: 1.3em;
+            font-family: $m-font;
+            border-radius: 12px;
+            cursor: pointer;
+            border:hidden;
+            margin-left: 30%;
+    
+            @keyframes backgroundcolorchange{
+    
+            0% {background: #256610;} 
+            50% {background: #D5DD31;}
+            75% {background: #ff9800;}
+            100% {background: $m-color;}} //animation braket ends
+    
+        }
+    
+            &hover{transform: scale(1.05);}
+    } //div ends
+    
+    
+    #footer{
+        margin-top: 20%;
+     width: 100%;
+     
+     background-color: $m-color;
+    
+     p{font-size: 0.7em;
+        text-align: center;
+        padding: 3.5vh;
+        font-family: $sans;}
+    
+    }
+
+}
+@media only screen and  (min-width: 916px) {
+
 main{
 margin: 0 auto;
 }
@@ -18,6 +363,8 @@ h2{ color:#FBEE4A;
     padding-left: 45%;
     font-family: $m-font;}
 }
+
+//header
 
 #whatis{
 display: flex;
@@ -73,9 +420,9 @@ padding: 5%;
                         -o-transition: all 300ms ease-in-out;
                         -ms-transition: all 300ms ease-in-out;
                             .p1{margin-top: 15vh;}
-                            .p2{margin-top: 1.5vh;}
-                            .p3{margin-top: 5vh;}
-                            .p4{margin-top: 2vh;}
+                            .p2{margin-top: 5vh;}
+                            .p3{margin-top: 10vh;}
+                            .p4{margin-top: 10vh;}
                             p{font-family:$sans; 
                                 font-size: 1em;
                                  color: white;
@@ -157,4 +504,5 @@ margin-top: 15%;
     padding: 3.5vh;
     font-family: $sans;}
 
+}
 }
