@@ -1,6 +1,6 @@
 # Heroku Test
 
-### developing an application the favorite product by Node.js (with Express.js), HTML, SASS and connecting with Heroku
+### Developing an application the favorite product by Node.js (with Express.js), HTML, SASS and connecting with Heroku
 
 ## Product
 
